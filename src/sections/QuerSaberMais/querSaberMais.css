@@ -39,17 +39,18 @@
 /* responsivo */
 @media (min-width: 768px) and (max-width: 1024px) {
   .querSaberMais-title h1 {
+    font-size: var(--font-size-title-mobile);
     text-align: center;
   }
 }
 
 @media (max-width: 767px) {
   .querSaberMais-title h1 {
+    font-size: var(--font-size-title-mobile);
     text-align: center;
-    font-size: 3.5rem;
   }
 
   .querSaberMais-button {
-    font-size: var(--font-size-lists);
+    font-size: var(---font-size-button-contact-mobile);
   }
 }

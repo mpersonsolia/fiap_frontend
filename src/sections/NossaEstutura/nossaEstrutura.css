@@ -5,7 +5,7 @@
       #006bb74b 0%,
       transparent 30%
     ),
-    radial-gradient(circle at 90% 60%, #006bb74b 0%, transparent 30%);
+    radial-gradient(circle at 90% 50%, #006bb74b 0%, transparent 30%);
   color: var(--color-light-blue);
   font-family: "Gotham";
   padding: 8rem 4rem 8rem 4rem;
@@ -79,6 +79,7 @@
 
 .nossaEstrutura-accordion-content p {
   background-color: transparent;
+  font-size: var(--font-size-paragraph-accordion);
 }
 
 .nossaEstrutura-accordion-divider {
@@ -106,7 +107,15 @@
   }
 
   .nossaEstrutura-header h1 {
-    font-size: 3.5rem;
+    font-size: var(--font-size-title-mobile);
+  }
+
+  .nossaEstrutura-accordion-header h2 {
+    font-size: var(--font-size-title-accordion-mobile);
+  }
+
+  .nossaEstrutura-accordion-content p {
+    font-size: var(--font-size-paragraph-accordion);
   }
 }
 
@@ -116,7 +125,20 @@
   }
 
   .nossaEstrutura-header h1 {
-    font-size: 3.5rem;
+    font-size: var(--font-size-title-mobile);
     margin-bottom: 3rem;
+  }
+
+  .nossaEstrutura-accordion-header h2 {
+    font-size: var(--font-size-title-accordion-mobile);
+  }
+
+  .nossaEstrutura-accordion-content p {
+    font-size: var(--font-size-paragraph-accordion-mobile);
+  }
+
+  .nossaEstrutura-accordion-header h2 {
+    flex-basis: 80%;
+    margin: 0;
   }
 }

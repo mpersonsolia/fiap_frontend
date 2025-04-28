@@ -62,7 +62,7 @@
 .educacaoTech-content-text-left-image figcaption {
   background-color: var(--color-white);
   color: var(--color-dark-gray);
-  font-family: "Gotham";
+  font-family: "Roboto";
   font-size: var(--font-size-key);
   font-weight: 400;
 }
@@ -170,7 +170,7 @@
 }
 
 .modal-close {
-  background: transparent;
+  background-color: transparent;
   border: none;
   cursor: pointer;
   font-size: 1.5rem;
@@ -193,7 +193,20 @@
   }
 
   .educacaoTech-content-title h1 {
-    font-size: 3.5rem;
+    font-size: var(--font-size-title-mobile);
+  }
+
+  .educacaoTech-content-text-left-paragraph,
+  .educacaoTech-content-text-right-paragraph {
+    font-size: var(--font-size-paragraph-mobile);
+  }
+
+  .educacaoTech-content-text-left-image figcaption {
+    font-size: var(--font-size-key-mobile);
+  }
+
+  .educacaoTech-content-text-right-list li {
+    font-size: var(--font-size-sublist-mobile);
   }
 
   .educacaoTech-button {
@@ -207,7 +220,7 @@
   }
 
   .educacaoTech-content-title h1 {
-    font-size: 3.5rem;
+    font-size: var(--font-size-title-mobile);
     margin-bottom: 3rem;
   }
 
@@ -223,7 +236,16 @@
 
   .educacaoTech-content-text-left-paragraph,
   .educacaoTech-content-text-right-paragraph {
+    font-size: var(--font-size-paragraph-mobile);
     text-align: start;
+  }
+
+  .educacaoTech-content-text-left-image figcaption {
+    font-size: var(--font-size-key-mobile);
+  }
+
+  .educacaoTech-content-text-right-list li {
+    font-size: var(--font-size-sublist-mobile);
   }
 
   .educacaoTech-button {
