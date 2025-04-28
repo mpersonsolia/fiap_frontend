@@ -1,0 +1,232 @@
+.educacaoTech-section {
+  background-color: var(--color-white);
+  padding: 8rem 4rem 8rem 4rem;
+}
+
+.educacaoTech-content {
+  background-color: var(--color-white);
+  margin: 0 auto;
+  max-width: 75rem;
+}
+
+.educacaoTech-content-title {
+  background-color: var(--color-white);
+}
+
+.educacaoTech-content-title h1 {
+  background-color: var(--color-white);
+  color: var(--color-light-black);
+  font-family: "Gotham";
+  font-size: var(--font-size-title);
+  font-weight: 500;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+}
+
+.educacaoTech-content-text {
+  background-color: var(--color-white);
+  display: flex;
+  gap: 4rem;
+}
+
+.educacaoTech-content-text-left {
+  background-color: var(--color-white);
+  flex: 1;
+  padding-left: 5rem;
+}
+
+.educacaoTech-content-text-left-paragraph,
+.educacaoTech-content-text-right-paragraph {
+  background-color: var(--color-white);
+  color: var(--color-dark-gray);
+  font-family: "Gotham";
+  font-size: var(--font-size-paragraph);
+  font-weight: 500;
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+
+.educacaoTech-content-text-left-image {
+  background-color: var(--color-white);
+  cursor: pointer;
+}
+
+.educacaoTech-content-text-left-image img {
+  background-color: var(--color-white);
+  width: 100%;
+  max-width: 670px;
+  height: auto;
+  object-fit: contain;
+}
+
+.educacaoTech-content-text-left-image figcaption {
+  background-color: var(--color-white);
+  color: var(--color-dark-gray);
+  font-family: "Gotham";
+  font-size: var(--font-size-key);
+  font-weight: 400;
+}
+
+.educacaoTech-content-text-right {
+  background-color: var(--color-white);
+  flex: 1;
+}
+
+.educacaoTech-content-text-right-paragraph {
+  background-color: var(--color-white);
+  margin-bottom: 1rem;
+}
+
+.educacaoTech-content-text-right-list {
+  background-color: var(--color-white);
+}
+
+.educacaoTech-content-text-right-list-item {
+  background-color: var(--color-white);
+  display: flex;
+  color: var(--color-dark-gray);
+  font-family: "Gotham";
+  font-size: var(--font-size-lists);
+  font-weight: 500;
+}
+
+.educacaoTech-content-text-right-list-item p {
+  background-color: var(--color-white);
+}
+
+.educacaoTech-content-text-right-list-item-slash {
+  background-color: var(--color-white);
+  color: var(--color-magenta);
+  font-family: "Gotham";
+  font-size: var(--font-size-paragraph);
+  font-weight: 700;
+  padding: 0 1rem 1.5rem 0;
+}
+
+.educacaoTech-content-text-right-list ul {
+  background-color: var(--color-white);
+  padding-left: 40px;
+}
+
+.educacaoTech-content-text-right-list li {
+  background-color: var(--color-white);
+  color: var(--color-magenta);
+  font-family: "Gotham";
+  font-size: var(--font-size-sublist);
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.educacaoTech-button {
+  background-color: transparent;
+  flex-direction: row-reverse;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1rem 2rem 1rem 0;
+}
+
+.educacaoTech-button-icon {
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--color-magenta);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.educacaoTech-button-icon img {
+  background-color: transparent;
+  height: 3.125rem;
+  object-fit: contain;
+  padding: 0.5rem;
+  width: 3.125rem;
+}
+
+/* modal */
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: transparent;
+  padding: 20px;
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: hidden;
+  position: relative;
+}
+
+.modal-close {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: fixed;
+  right: 1.25rem;
+  top: 1.25rem;
+  z-index: 1001;
+}
+
+.modal-image {
+  height: auto;
+  object-fit: contain;
+  width: 100%;
+}
+
+/* responsivo */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .educacaoTech-section {
+    padding: 4rem 3rem 4rem 3rem;
+  }
+
+  .educacaoTech-content-title h1 {
+    font-size: 3.5rem;
+  }
+
+  .educacaoTech-button {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .educacaoTech-section {
+    padding: 4rem 2rem 4rem 2rem;
+  }
+
+  .educacaoTech-content-title h1 {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .educacaoTech-content-text {
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .educacaoTech-content-text-left {
+    padding-left: 0;
+  }
+
+  .educacaoTech-content-text-left-paragraph,
+  .educacaoTech-content-text-right-paragraph {
+    text-align: start;
+  }
+
+  .educacaoTech-button {
+    display: none;
+  }
+}

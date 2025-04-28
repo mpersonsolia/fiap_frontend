@@ -1,0 +1,55 @@
+.querSaberMais-section {
+  background-color: var(--color-dark-black);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8rem 4rem;
+}
+
+.querSaberMais-title {
+  color: var(--color-light-blue);
+  font-family: "Gotham";
+  font-size: var(--font-size-title);
+  font-weight: 500;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+}
+
+.querSaberMais-button {
+  color: var(--color-magenta);
+  cursor: pointer;
+  border: 2px solid var(--color-magenta);
+  font-family: "Gotham";
+  font-size: var(--font-size-button-contact);
+  font-weight: 500;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+
+.querSaberMais-button:hover {
+  background-color: var(--color-magenta);
+  color: var(--color-dark-black);
+  cursor: pointer;
+  border: 2px solid var(--color-magenta);
+  transition: all 0.5s ease-in-out;
+}
+
+/* responsivo */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .querSaberMais-title h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .querSaberMais-title h1 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+  .querSaberMais-button {
+    font-size: var(--font-size-lists);
+  }
+}

@@ -1,0 +1,122 @@
+.nossaEstrutura-section {
+  background-color: var(--color-dark-black);
+  background-image: radial-gradient(
+      circle at 10% 30%,
+      #006bb74b 0%,
+      transparent 30%
+    ),
+    radial-gradient(circle at 90% 60%, #006bb74b 0%, transparent 30%);
+  color: var(--color-light-blue);
+  font-family: "Gotham";
+  padding: 8rem 4rem 8rem 4rem;
+}
+
+.nossaEstrutura-header {
+  background-color: transparent;
+}
+
+.nossaEstrutura-header h1 {
+  color: var(--color-light-blue);
+  background-color: transparent;
+  font-family: "Gotham";
+  font-size: var(--font-size-title);
+  font-weight: 500;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+}
+
+.nossaEstrutura-accordion {
+  background-color: transparent;
+  margin: 0 auto;
+  max-width: 75rem;
+  width: 100%;
+}
+
+.nossaEstrutura-accordion-aba {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.nossaEstrutura-accordion-header {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.nossaEstrutura-accordion-header h2 {
+  background-color: transparent;
+  font-size: var(--font-size-title-accordion);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.nossaEstrutura-accordion-button {
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid var(--color-magenta);
+  color: var(--color-magenta);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  height: 2rem;
+  overflow: hidden;
+  padding: 0 10px;
+  width: 2rem;
+}
+
+.nossaEstrutura-accordion-content {
+  animation: fadeIn 0.5s ease-in-out;
+  background-color: transparent;
+  color: var(--color-light-gray);
+  padding-bottom: 1.5rem;
+}
+
+.nossaEstrutura-accordion-content p {
+  background-color: transparent;
+}
+
+.nossaEstrutura-accordion-divider {
+  background-color: transparent;
+  border: 0;
+  border-top: 2px solid var(--color-dark-gray);
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* responsivo */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nossaEstrutura-section {
+    padding: 4rem 3rem 4rem 3rem;
+  }
+
+  .nossaEstrutura-header h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .nossaEstrutura-section {
+    padding: 4rem 2rem 4rem 2rem;
+  }
+
+  .nossaEstrutura-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+  }
+}

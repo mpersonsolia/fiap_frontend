@@ -1,0 +1,7 @@
+.breakImage-section {
+  height: 80vh;
+  background-image: url(../../assets/images/break-image.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
